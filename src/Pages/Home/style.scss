@@ -1,0 +1,233 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    .background
+     {
+        position: relative;
+     }
+    img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+    .display {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+        text-align: center;
+        color: #0d72bff8;
+        border-collapse: separate;
+            border-spacing: 10px #0d72bff8;;
+
+        .button{
+            display: flex;
+            justify-content: center;home{
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    .background
+     {
+        position: relative;
+     }
+    img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+    .display {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+        text-align: center;
+        color: #0d72bff8;
+        border-collapse: separate;
+            border-spacing: 10px #0d72bff8;;
+
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+            button{
+                width: 200px;
+                height: 40px;
+                background: #0d72bff8;
+                border: 0;
+                border-radius: 5px;
+                margin-left: 10px;
+                cursor: pointer;
+                &:hover{
+                    background:  #0d72bff8;
+                }
+            }
+
+        }
+
+        // Ajouter une bordure entre les tableaux
+
+        // Ajouter une bordure entre les espaces de la grille
+        > * {
+            border: 0px solid ;
+        }
+    }
+
+    .search-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        input{
+            width: 100%;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0 10px;
+            font-size: 16px;
+            color: #0d72bff8;
+            &::placeholder{
+                color:  #0d72bff8;
+            }
+        }
+        button{
+            width: 60px;
+            height: 40px;
+            background: #0d72bff8;
+            border: 0;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            &:hover{
+                background:  #0d72bff8;
+            }
+        }
+    }
+.display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #0d72bff8;
+    border-collapse: separate;
+    border-spacing: 10px #0d72bff8;
+
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        button{
+            width: 200px;
+            height: 40px;
+            background: #0d72bff8;
+            border: 0;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            &:hover{
+                background:  #0d72bff8;
+            }
+        }
+    }
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    input{
+        width: 100%;
+        height: 40px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 0 10px;
+        font-size: 16px;
+        color: #0d72bff8;
+        &::placeholder{
+            color:  #0d72bff8;
+        }
+    }
+    button{
+        width: 60px;
+        height: 40px;
+        background: #0d72bff8;
+        border: 0;
+        border-radius: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+        &:hover{
+            background:  #0d72bff8;
+        }
+    }
+}
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+            button{
+                width: 200px;
+                height: 40px;
+                background: #0d72bff8;
+                border: 0;
+                border-radius: 5px;
+                margin-left: 10px;
+                cursor: pointer;
+                &:hover{
+                    background:  #0d72bff8;
+                }
+            }
+
+        }
+
+        // Ajouter une bordure entre les tableaux
+
+        // Ajouter une bordure entre les espaces de la grille
+        > * {
+            border: 0px solid ;
+        }
+    }
+
+    .search-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        input{
+            width: 100%;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0 10px;
+            font-size: 16px;
+            color: #0d72bff8;
+            &::placeholder{
+                color:  #0d72bff8;
+            }
+        }
+        button{
+            width: 60px;
+            height: 40px;
+            background: #0d72bff8;
+            border: 0;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            &:hover{
+                background:  #0d72bff8;
+            }
+        }
+    }
