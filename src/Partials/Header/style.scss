@@ -1,37 +1,121 @@
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
 
 .header {
-    
-    max-width: 1240px;
-    width: 100%;
-    margin: 50px  auto;
+  background-color: #003366; /* Bleu marine */
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  img {
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  .nav-links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-div {
-    
     gap: 20px;
-    display: flex;
+  }
 
-}
-a{
-    color: #0d72bff8;
-    font-family: Montserrat;
-    font-size: 24px;
-    text-decoration-line: none;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
 
-    &.active,
-    &:hover {
-        text-decoration: underline;
-        
+    &.active {
+      font-weight: bold;
+      border-bottom: 2px solid white;
     }
-   
-} img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    
+
+    &:hover {
+      color: #ffcc00; /* Couleur au survol */
+    }
+  }
 }
 
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1.page-title {
+  color: #003366; /* Couleur pour le titre principal */
+  font-size: 2.5em; /* Taille du titre principal */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.country-container {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Adjust as needed */
+  justify-content: space-between; /* Ensure spacing between text and flag */
+
+  .text-container {
+    flex: 1;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  img {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
+  p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+
+  .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+
+    iframe {
+      border-radius: 15px;
+      border: 3px solid #0d72bf; /* Couleur de la bordure */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      height: 350px;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #0d72bff8;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
 }
