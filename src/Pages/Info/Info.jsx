@@ -1,17 +1,22 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import "./style.scss"; // Assurez-vous que le chemin du fichier SCSS est correct
+// Importation des bibliothèques nécessaires
+import React, { useEffect, useState } from "react"; // Bibliothèque React et Hooks
+import { useParams } from "react-router-dom"; // Hook useParams de react-router-dom pour accéder aux paramètres de l'URL
+import "./style.scss"; // Importation du fichier SCSS
 
+// Définition du composant InfoPage
 export default function InfoPage() {
-  const [country, setCountry] = useState([]);
-  const { name } = useParams();
+  // Déclaration des états locaux avec useState
+  const [country, setCountry] = useState([]); // Informations sur le pays
+  const { name } = useParams(); // Récupération du nom du pays à partir des paramètres de l'URL
 
+  // Utilisation de useEffect pour récupérer les informations sur le pays lorsque le nom du pays change
   useEffect(() => {
-    fetch("https://restcountries.com/v3.1/name/" + name + "?fullText=true")
-      .then((response) => response.json())
-      .then((data) => setCountry(data));
-  }, [name]);
+    fetch("https://restcountries.com/v3.1/name/" + name + "?fullText=true") // Requête à l'API
+      .then((response) => response.json()) // Conversion de la réponse en JSON
+      .then((data) => setCountry(data)); // Mise à jour de l'état country avec les données récupérées
+  }, [name]); // Dépendances de useEffect (name pour exécuter à chaque changement de nom)
 
+  // Rendu du composant
   return (
     <div className="main-content">
       {country.map((ct) => (

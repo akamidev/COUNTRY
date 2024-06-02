@@ -1,38 +1,38 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    max-width: 1240px;
-    width: 100%;
-    margin: 0 auto;
-  
-    .background {
-      position: relative;
-    }
-  
-    img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-    }
-  
-    .display {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      margin-top: 20px;
-      text-align: center;
-      color: #0d72bff8;
-  
-      .country-card {
-        background-color: white;
-        border: 2px solid #0d72bff8;
-        border-radius: 10px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex; // Utilisation de Flexbox pour le layout
+  flex-direction: column; // Orientation des éléments en colonne
+  max-width: 1240px; // Largeur maximale de la section
+  width: 100%; // Largeur de la section
+  margin: 0 auto; // Centrage horizontal de la section
+
+  .background {
+    position: relative; // Position relative pour les éléments enfants positionnés absolument
+  }
+
+  img {
+    width: 100%; // Largeur de l'image
+    height: 220px; // Hauteur de l'image
+    object-fit: cover; // Redimensionnement de l'image pour couvrir toute la zone sans déformation
+  }
+
+  .display {
+    display: grid; // Utilisation de Grid pour le layout
+    grid-template-columns: repeat(4, 1fr); // Création de 4 colonnes de taille égale
+    gap: 20px; // Espace entre les éléments de la grille
+    margin-top: 20px; // Marge supérieure
+    text-align: center; // Centrage du texte
+    color: #0d72bff8; // Couleur du texte
+
+    .country-card {
+      background-color: white; // Couleur de fond de la carte
+      border: 2px solid #0d72bff8; // Bordure de la carte
+      border-radius: 10px; // Rayon de la bordure pour des coins arrondis
+      padding: 20px; // Espace intérieur de la carte
+      display: flex; // Utilisation de Flexbox pour le layout
+      flex-direction: column; // Orientation des éléments en colonne
+      align-items: center; // Centrage horizontal des éléments
+      justify-content: space-between; // Répartition égale de l'espace entre les éléments
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Ombre portée de la carte
   
         h2 {
           font-size: 1.2em;
@@ -119,28 +119,28 @@
   
     @media (max-width: 992px) {
       .display {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); // Pour les écrans jusqu'à 992px de large, la grille est divisée en 2 colonnes de taille égale
       }
     }
-  
+    
     @media (max-width: 576px) {
       .display {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; // Pour les écrans jusqu'à 576px de large, la grille est divisée en 1 colonne
       }
-  
+    
       .country-card {
         h2 {
-          font-size: 1em;
+          font-size: 1em; // La taille de la police des titres h2 est réduite à 1em
         }
-  
+    
         img {
-          width: 60%;
+          width: 60%; // La largeur des images est réduite à 60% de la largeur de la carte
         }
-  
+    
         .button {
           button {
-            width: 100%;
-            height: 40px;
+            width: 100%; // La largeur des boutons est augmentée à 100% de la largeur de la carte
+            height: 40px; // La hauteur des boutons est fixée à 40px
           }
         }
       }

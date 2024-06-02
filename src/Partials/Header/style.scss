@@ -20,6 +20,7 @@ body {
   .nav-links {
     display: flex;
     gap: 20px;
+    flex: 1; /* Allows navigation links to take up remaining space */
   }
 
   a {
@@ -37,6 +38,22 @@ body {
       color: #ffcc00; /* Couleur au survol */
     }
   }
+
+  .theme-toggle {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: white;
+      color: #003366;
+    }
+  }
 }
 
 .main-content {
@@ -48,28 +65,29 @@ body {
 }
 
 h1.page-title {
-  color: #003366; /* Couleur pour le titre principal */
-  font-size: 2.5em; /* Taille du titre principal */
-  margin-top: 20px;
-  margin-bottom: 20px;
+  color: #003366;
+  font-size: 2.5em;
+  margin: 20px 0;
   text-align: center;
   width: 100%;
 }
 
 .country-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: #f9f9f9;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 80%; /* Adjust as needed */
-  justify-content: space-between; /* Ensure spacing between text and flag */
+  width: 80%;
+  max-width: 1200px;
 
   .text-container {
-    flex: 1;
+    width: 100%;
     text-align: left;
+    margin-bottom: 20px;
   }
 
   h2 {
@@ -79,10 +97,11 @@ h1.page-title {
   }
 
   img {
-    width: 150px; /* Adjust as needed */
+    width: 100%;
+    max-width: 150px;
     height: auto;
     border-radius: 10px;
-    margin-left: 20px;
+    margin-top: 20px;
   }
 
   p {
@@ -99,7 +118,7 @@ h1.page-title {
 
     iframe {
       border-radius: 15px;
-      border: 3px solid #0d72bf; /* Couleur de la bordure */
+      border: 3px solid #0d72bf;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       width: 90%;
       height: 350px;
@@ -113,9 +132,26 @@ h1.page-title {
 }
 
 .footer {
-  background-color: #0d72bff8;
+  background-color: #0d72bf;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .country-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  img {
+    margin: 0;
+  }
 }
